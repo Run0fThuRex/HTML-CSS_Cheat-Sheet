@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex's Web-Development Cheat Sheet</title>
+    <link href="C:\Users\rexcr\OneDrive\Desktop\Projects\HTML-CSS_Cheat-Sheet\styles.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Sono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="top">
+
+        <h1 id="header-title">Rex's Web-Development Cheat Sheet</h1>
+
+        <p class="header-description">A web-development refrence sheet to refer to as needed covering what I found to be the most crucial in my experience thus far in learning web development.</p>
+
+        <h2 class="page-navigation-h2">Page Navigation</h2>
+
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="html">
+            <h2 id="html-h2">HTML</h2>
+            <section id="html-fundamentals">
+                <h3>HTML-Fundamentals</h3>
+                
+                <section class="html-elements">
+
+                    <h4 id="target-attribute"><code class="html-code">Target</code></h4>
+
+                        <p id="target-attribute-p">The target attribute tells the <code class="html-code">&lt;a&gt;</code> element where to open the link. For instance, <code class="html-code">_blank</code> will tell the browser to open the link in a new tab.</p>
+
+                        <aside id="target-aside">Also, using the <code class="html-code">#</code>, you can specify which part of the page you'd like the anchor<code class="html-code">&lt;a&gt;</code> element to open the link to, so long you specify the element using the <code class="html-code">id</code> attribute. Like so.</aside>
+
+                        <figure id="target-example">
+                            <code class="html-code">&lt;div&gt;</code>
+                                <code class="html-code">&lt;p id="my-example"&gt;</code>This is my example paragraph.<code class="html-code">&lt;/p&gt;</code>
+                            <code class="html-code">&lt;/div&gt;</code>
+                          
+                            <code class="html-code">&lt;a href="#my-example"&gt;</code>Show me my example please.<code class="html-code">&lt;/a&gt;</code>
+                        </figure>
+
+                </section>
+            </section>
+
+            <section id="semantics">
+                <h3 id="html-semantics-h3">HTML-Semantics</h3>
+
+                <p id="html-semantics-p">Semantic HTML is simply writing HTML with further specification of the documents sections, such as using <br>
+                    elements that give more meaning and detail to your document, some of which will be listed below.</p>  
+                    <ul id="html-semantics-ul">
+                        <li class="html-semantics-li"><code class="html-code">&lt;article&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;aside&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;details&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;figcaption&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;figure&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;footer&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;header&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;main&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;mark&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;nav&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;section&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;summary&gt;</code></li>
+                        <li class="html-semantics-li"><code class="html-code">&lt;time&gt;</code></li>
+                    </ul>
+
+            </section>
+
+            <section id="html-tables">
+                
+                    <h3 id="html-tables-h3">HTML-Tables</h3>
+                    
+                    <h4 id="html-table-elements">Table Elements</h4>
+
+                    <table class="html-table-example">
+                        <thead class="table-example-head">
+                            <tr class="table-row">
+                                <th class="table-head"><code class="html-code">&lt;table&gt;</code> Element</th>
+                                <th class="table-head"><code class="html-code">&lt;thead&gt;</code> Element</th>
+                                <th class="table-head"><code class="html-code">&lt;tr&gt;</code> Element</th>
+                                <th class="table-head"><code class="html-code">&lt;td&gt;</code> Element</th>
+                                <th class="table-head"><code class="html-code">&lt;tbody&gt;</code> Element</th>
+                                <th class="table-head"><code class="html-code">&lt;tfooter&gt;</code> Element</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr class="table-row">
+                                <td class="table-data"><code class="html-code">&lt;table&gt;</code> element is used to display a table in HTML.</td>
+                                <td class="table-data"><code class="html-code">&lt;thead&gt;</code> element is used within the table sections which you specify to be the head sections.</td>
+                                <td class="table-data"><code class="html-code">&lt;tr&gt;</code> is used to add more rows to the HTML-table.</td>
+                                <td class="table-data"><code class="html-code">&lt;td&gt;</code> element is used to add cells of data to your table, nested within a row element.</td>
+                                <td class="table-data"><code class="html-code">&lt;tbody&gt;</code> element is semantic and will contain all table data.</td>
+                                <td class="table-data"><code class="html-code">&lt;tfooter&gt;</code> Specifies the bottom section of a table element.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+    
+                    <h4 id="html-table-attributes">Table Element Attributes</h4>
+                    <table class="html-table-example">
+                        <thead class="table-example-head">
+                            <tr class="table-row">
+                                <th class="table-head">Colspan</th>
+                                <th class="table-head">Rolspan</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr class="table-row">
+                                <td class="table-data">Colspan value default is <code class="html-code">1</code>, and can go as high as <code class="html-code">1000</code>.</td>
+                                <td class="table-data">Rowspan value default is <code class="html-code">1</code>, and can go as high as<code class="html-code">65534</code>.</td>
+                            </tr>
+                        </tbody>
+                        <tfooter class="table-footer">
+                            <tr class="table-row">
+                                <td class="table-data">States how many columns the cell should span.(Vertical)</td>
+                                <td class="table-data">States how many rows the cell should span.(Horizontal)</td>
+                            </tr>
+                        </tfooter>
+                    </table>
+
+        </section> 
+    <section id="css">
+            <h2 id="css-h2">CSS</h2>
+
+            <section id="css-selectors-visual-rules">
+                <table class="css-selectors-visual-table">
+                    <thead class="css-selectors-visual-thead">
+                        <tr class="css-selectors-visual-tr">
+                            <th class="css-selectors-visual-th">Class Selectors</th>
+                            <th class="css-selectors-visual-th">ID Selectors</th>
+                        </tr>
+                    </thead>
+                    <tbody class="css-selectors-visual-tbody">
+                        <tr class="css-selectors-visual-tr">
+                            <td class="css-selectors-visual-td-class">Can be reusable</td>
+                            <td class="css-selectors-visual-td-id">Should be unique</td>
+                        </tr>
+                        <tr class="css-selectors-visual-tr">
+                            <td class="css-selectors-visual-td-class">Can be applied to many elements</td>
+                            <td class="css-selectors-visual-td-id">Should be used to style only a single element</td>
+                        </tr>
+                        <tr class="css-selectors-visual-tr">
+                            <td class="css-selectors-visual-td-class">Uses a <code class="css-code">.</code> to select class-name</td>
+                            <td class="css-selectors-visual-td-id">Uses a <code class="css-code">#</code> to select the id-name</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="css-display-positioning">
+                <section id="css-z-index">
+                    <h3 id="css-z-index-h3">Z-Index</h3>
+                    <p id="css-z-index-p"><code class="css-code">z-index</code> is a CSS property, specifying depth of an elements apperance in the possible scenario of it overlapping other elements.</p>
+
+                    <p>It holds a default value of <code class="css-code">auto</code>.</p>
+
+                    <p><code class="css-code">z-index</code> can be whole number values<code class="css-code">(1, 100, -1, etc)</code>, if not the default value, and basically, elements holding a higher <code>z-index</code> value will be on top of the lower value elements.</p>
+
+                    <aside><code class="css-code">z-index</code> is only possible when referring to <a href="#css-position-h3">positioned elements</a></aside>
+                </section>
+                <section id="css-display-property">
+                    <h3 id="css-display-property-h3">Property: Display</h3>
+                    <p><code class="css-code">display</code> is the specification of which type of rendering box for an element.</p>
+                    <p>Some more commonly used <code class="css-code">values</code> are;</p>
+                    <ul>
+                        <li><code class="css-code">inline-block</code> elements</li>
+                        <ul>
+                            <li>Can be side-by-side.</li>
+                            <li>Allows for adjustments for the height and width done manually.</li>
+                        </ul>
+                        <li><code class="css-code">block</code> elements</li>
+                        <ul>
+                            <li>Will take the full width of parent elements</li>
+                            <li>Before and after line breaks</li>
+                            <li>Also allows adjustments for the height and width manually</li>
+                        </ul>
+                        <li><code class="css-code">inline</code> elements</li>
+                        <ul>
+                            <li>Least amount of space as possible is taken up.</li>
+                            <li>Horizontally flowing</li>
+                            <li>Does not allow for adjustments for width and height.</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section id="css-position">
+                    <h3 id="css-position-h3">CSS Positions</h3>
+                    <p id="css-position-p">The CSS <code class="css-code">position</code> property can hold 1 of 4 values which are the following possiblities:</p>
+                    <ul id="css-position-ul">
+                        <li class="css-position-li"><code class="css-code"><a href="#css-position-fixed">fixed</a></code></li>
+                        <li class="css-position-li"><code class="css-code"><a href="#css-position-static">static</a></code></li>
+                        <li class="css-position-li"><code class="css-code"><a href="#css-position-relative">relative</a></code></li>
+                        <li class="css-position-li"><code class="css-code"><a href="#css-position-absolute">absolute</a></code></li>
+                    </ul>
+                </section>
+                <section id="css-position-fixed">
+                    <h3 id="css-position-fixed-h3">Fixed</h3>
+                    <ul>
+                        <li>It will be <strong>fixed</strong> to a specified location on the page</li>
+                        <li>Good for making an element accessible to the user at all times no matter where they scroll to on page.</li>
+                    </ul>
+                </section>
+                <section id="css-position-static">
+                    <h3 id="css-position-static-h3">Static</h3>
+                    <ul>
+                        <li>Default value of the <code class="css-code">position</code> property.</li>
+                        <li>No effect on the positioning of an element.</li>
+                    </ul>
+                </section>
+                <section id="css-position-relative">
+                    <h3 id="css-position-relative-h3">Relative</h3>
+                    <ul>
+                        <li>Allows element position to be specified relative to original location on page.</li>
+                        <li>Determination of the <strong>actual</strong> position of element, relative to its original can be done with offset properties.</li>
+                        <li>Positioning will act as default, <code class="css-code"class="css-code">static</code> value if there is no offset properties used.</li>
+                    </ul>
+                </section>
+                <section id="css-position-absolute">
+                    <h3 id="css-position-absolute-h3">Absolute</h3>
+                    <ul>
+                        <li><code class="css-code">absolute</code> value removes element from the flow of the document, allowing overlapping of elements.</li>
+                        <li>In relation to the elements closest parent, is where the element in discussion is placed. (Relative to nearest parent element).</li>
+                        <li>Additionally, if the element has no parents, it will simply use the <code class="css-code">&lt;body&gt;</code> of the document, moving along the page with scrolling.</li>
+                    </ul>
+                </section>
+                <section id="css-float-property">
+                    <h3 id="css-float-property-h3">Float</h3>
+                    <p>Within the parent element, <code class="css-code">float</code> specifies horizontally where an element should be. Or, where it should <code class="css-code">float</code> inside the parent element.</p>
+                        <h4>Float: Values</h4>
+                        <ul>
+                            <li><strong>Left:</strong>Element will <code class="css-code">float</code> to the left of it's container. </li>
+                            <li><strong>Right:</strong>Element will <code class="css-code">float</code> to the right of it's container.</li>
+                        </ul>
+                    <p><code class="css-code">width</code> of container needs specification, otherwise element will determine the value as the full width of parent element.</p>
+                </section>
+            </section>
+            <section id="css-clear-property">
+                <h3 id="css-clear-property-h3">Clear</h3>
+                <p>When two elements whom share a parent element collide with one another, the <code class="css-code">clear</code> property is what can be used to determine the behavior of an element.</p>
+                <p>More commonly used along with the previously discussed, <code class="css-code">float</code> property. Allows for specification on the desired side a floating element should <code class="css-code">float</code> to.</p>
+            </section>
+
+            <section id="css-box-model">
+                <h3 id="box-model-h3">CSS-Box-Model</h3>
+
+                <p id="box-model-p">The CSS Box model comprise a set of properties which define parts of an element that take space on a webpage.</p>
+
+                <figure id="box-model-image">
+                    <img src="C:\Users\rexcr\OneDrive\Desktop\Projects\HTML-CSS_Cheat-Sheet\resources\images\Box-Model.jpg" width="800" height="430" alt="An image displaying a visual representation of the CSS-Box-Model.">
+                    <figcaption id="box-model-caption">Visual Representation of the CSS Box-Model.</figcaption>
+                </figure> 
+
+                <p id="box-model-contents">Box Model includes:</p>
+                    <ul id="box-model-ul-1">
+                        <li class="box-model-li(1)">Content area's size(width and height)</li>
+                        <li class="box-model-li(1)">The following elements;</li>
+                            <ul id="box-model-ul-2">
+                                <li class="box-model-li(2)"><strong>Padding</strong>- Amount of space between content area and border.</li>
+                                <li class="box-model-li(2)"><strong>Border</strong>- Thickness & style of border surrounding content area & padding.</li>
+                                <li class="box-model-li(2)"><strong>Margin</strong>-Amount of space between border and outside edge of an element.</li>
+                            </ul>
+                    </ul>
+                    <section id="css-box-sizing">
+                        <h3 id="css-box-sizing-h3">Box-Model: Box-Sizing</h3>
+                        <p>As previously discussed, the box which is wrapped around an HTML element is the CSS:Box-Model.</p>
+                        <p>CSS:Box-Model has a property in which the height and width properties are controlled, which is known as the <code class="css-code">box-sizing</code> property.</p>
+                        <p><strong>Default Value:</strong> is set to <code class="css-code">content-box</code>. Actual size of element is rendered, including content-box. (No padding or borders</p>
+                        <p><strong>Another value:</strong> is <code class="css-code">border-box</code> which allows padding and border of an element to be included in the total width and height.<strong>(This value is widely preferred by most devs, in lue of the previously discussed value<code class="css-code">content-box</code>)</strong></p>
+
+                    </section>
+                    <section id="box-model-content-box">
+                        <h3 id="box-model-content-box-h3">Box-Model:Content-Box</h3>
+
+                        <figure id="content-box-figure">
+                            <img src="C:\Users\rexcr\OneDrive\Desktop\Projects\HTML-CSS_Cheat-Sheet\resources\images\box-model-content-box.jpg" width="800" height="430" alt="An image displaying a visual representation of the CSS-Box-Model:Content-Box.">
+                            <figcaption id="box-model-content-box-caption">Visual Representation of the CSS Box-Model:Content-Box.</figcaption>
+                        </figure>
+
+                        <h4>Box-Model:Border-Box</h4>
+                            <p>To reset the entire box-model and specify a new one use the following code.</p>
+
+                            <figure id="border-box-reset">
+                                <code class="css-code">
+                                    *{
+                                        box-sizing: border-box;
+                                    }
+                                </code>
+                                <figcaption id="border-box-reset-caption">Resets box-model to border-box for <strong>all</strong> HTML elements.</figcaption>
+                            </figure>
+                        
+                    </section>
+                    <section id="css-margin-collapse">
+                        <h3 id="css-margin-collapse-h3">Margin-Collapse</h3>
+                        <p>Margin collapse is simply the combination of the top and bottome margins of blocks, into one single margin with the same size as the largest of these two margins in discussion.</p>
+                        <p><strong>Note:</strong> Only occurs with vertical margins. Not horizontally.</p>
+                    </section>
+                    <section id="css-overflow">
+                        <h3 id="css-overflow-h3">Overflow</h3>
+                        <p><code class="css-code">overflow</code> is a property which determines solution of an issue in the scenario of content being too large for it's container.</p>
+                        <p>Default value: <code class="css-code">visible</code>(content will not be altered and it will just take the space in which it is overflowing.)</p>
+                        <p>Other values include ;</p>
+                        <ul>
+                            <li><code class="css-code">scroll</code>-overflowing content is accessible through scrolling inside the container element.</li>
+                            <li><code class="css-code">hidden</code>-as you can imagine based on the value name, the overflowing content will be hidden.</li>
+                        </ul>
+                    </section>
+                    <section id="css-visibility">
+                        <h3 id="css-visibility-h3">Visbility</h3>
+                        <p><code class="css-code">visibility</code> is a property in which an item may be specified to become <code class="css-code">hidden</code>.</p>
+                        <p><strong>Note:</strong>Does not remove specified element or item from the page. This is to allow the page to stay in-tact and remain organized and structured.</p>
+                    </section>
+                    <section>
+                        <h3 id="css-padding">CSS-Padding</h3>
+                        <p id="css-shorthand"><strong>Short-hand Property</strong>- Allows specification of all padding properties as values on a single line.</p>
+
+                        <h4 id="short-hand-4val">Short-hand Property Order(4 Values)</h4>
+                            <ol id="short-hand-4val-ol">
+                                <li class="short-hand-4val-li">Padding-Top(6px)</li>
+                                <li class="short-hand-4val-li">Padding-Right(11px)</li>
+                                <li class="short-hand-4val-li">Padding-Bottom(4px)</li>
+                                <li class="short-hand-4val-li">Padding-Left(9px)</li>
+                            </ol>
+                            
+                        <figure id="short-hand-4val-ex">
+                            <code class="css-code">
+                                p.content-header {
+                                    padding: 6px 11px 4px 9px;
+                                }
+                            </code>
+                        </figure>
+
+                        <h4 id="short-hand-3val">Short-hand Property Order(3 Values)</h4>
+                            <ol id="short-hand-3val-ol">
+                                <li class="short-hand-3val-li">Padding-Top(5px)</li>
+                                <li class="short-hand-3val-li">Padding-Right | Padding-Left(10px)</li>
+                                <li class="short-hand-3val-li">Padding-Bottom(20px)</li>
+                            </ol>
+                            
+                        <figure id="short-hand-3val-ex">
+                            <code class="css-code">
+                                p.content-header {
+                                    padding: 5px 10 px 20px;
+                                }
+                            </code>
+                        </figure>
+
+                        <h4 id="short-hand-2val">Short-hand Property Order(2 Values)</h4>
+                            <ol id="short-hand-2val-ol">
+                                <li class="short-hand-2val-li">Padding-Top | Padding-Bottom(5px)</li>
+                                <li class="short-hand-2val-li">Padding-Right | Padding-Left(10px)</li>
+                            </ol>
+                            
+                        <figure id="short-hand-2val-ex">
+                            <code class="css-code">
+                                p.content-header {
+                                    padding: 5px 10px;
+                                }
+                            </code>
+                        </figure>
+
+                        <aside id="short-hand-aside"><strong>Same shorthand rules apply for Margin element as well.</strong></aside>
+
+                    </section>
+                    
+
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h1>Thank you for viewing</h1>
+
+        <h2>Feel free to contact me</h2>
+    </footer>
+    
+</body>
+</html>
