@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rex's Web-Development Cheat Sheet</title>
-    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <link  href="./styles.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/909d23a8e4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Sono:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +17,7 @@
 
         <h1 id="header-title">Rex's Web-Development Cheat Sheet</h1>
 
-        <p class="header-description">A web-development refrence sheet to refer to as needed covering what I found to be the most crucial in my experience thus far in learning web development.</p>
+        <p class="header-description"><strong>A web-development refrence sheet to refer to as needed covering what I found to be the most crucial in my experience thus far in learning web development.</strong></p>
 
         <h2 class="page-navigation-h2">Page Navigation</h2>
 
@@ -32,10 +33,9 @@
         <section id="html">
             <h2 id="html-h2">HTML</h2>
             <section id="html-fundamentals">
-                <h3>HTML-Fundamentals</h3>
+                <h3 id="html-fundamentals-h3">HTML-Fundamentals</h3>
                 
                 <section class="html-elements">
-
                     <h4 id="target-attribute"><code class="html-code">Target</code></h4>
 
                         <p id="target-attribute-p">The target attribute tells the <code class="html-code">&lt;a&gt;</code> element where to open the link. For instance, <code class="html-code">_blank</code> will tell the browser to open the link in a new tab.</p>
@@ -44,7 +44,7 @@
 
                         <figure id="target-example">
                             <code class="html-code">&lt;div&gt;</code>
-                                <code class="html-code">&lt;p id="my-example"&gt;</code>This is my example paragraph.<code class="html-code">&lt;/p&gt;</code>
+                               <code class="html-code">&lt;p id="my-example"&gt;</code>This is my example paragraph.<code class="html-code">&lt;/p&gt;</code>
                             <code class="html-code">&lt;/div&gt;</code>
                           
                             <code class="html-code">&lt;a href="#my-example"&gt;</code>Show me my example please.<code class="html-code">&lt;/a&gt;</code>
@@ -80,7 +80,7 @@
                 
                     <h3 id="html-tables-h3">HTML-Tables</h3>
                     
-                    <h4 id="html-table-elements">Table Elements</h4>
+                    <h4 id="html-table-elements"><code class="html-code">Table Elements</code></h4>
 
                     <table class="html-table-example">
                         <thead class="table-example-head">
@@ -106,7 +106,7 @@
                     </table>
     
     
-                    <h4 id="html-table-attributes">Table Element Attributes</h4>
+                    <h4 id="html-table-attributes"><code class="html-code">Table Element Attributes</code></h4>
                     <table class="html-table-example">
                         <thead class="table-example-head">
                             <tr class="table-row">
@@ -375,10 +375,19 @@
             </section>
         </section>
     </main>
-    <footer>
-        <h1>Thank you for viewing</h1>
+    <footer id="bottom">
+        <h1 id="bottom-h1">Thank you for viewing</h1>
 
-        <h2>Feel free to contact me</h2>
+        <h2 id="bottom-h2">Feel free to contact me</h2>
+        <section id="social-menu">
+           <a class="social-menu-button" href="https://github.com/Run0fThuRex" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="social-menu-button" href="https://reddit.com/user/Rex_C_R" target="_blank"><i class="fa-brands fa-reddit"></i></a>
+                <a class="social-menu-button" href="https://www.twitch.tv/run0ftherex" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+                <a class="social-menu-button" href="https://forum.freecodecamp.org/u/run0fthurex/summary" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                <a class="social-menu-button" href="https://paypal.me/RexReitmeyer?country.x=US&locale.x=en_US" target="_blank"><i class="fa-brands fa-paypal"></i></a>
+                <a class="social-menu-button" href="https://stackoverflow.com/users/19559546/rex" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                <a class="social-menu-button" href="https://codepen.io/Run0fThuRex" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+        </section>
     </footer>
     
 </body>
